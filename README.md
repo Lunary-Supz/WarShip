@@ -4,7 +4,7 @@ Notre prof nous à demandé d'écrire n'importe quoi donc n'importe quoi...
 Ce projet est une bataille navale, il sert a s'amuser ainsi que de s'entrainer aux usecases scenario.
 <br><h3>7.1	Généralités</h3>
 <br>Ce module MA-20 a pour objectifs d'entraîner les étudiants à la réalisation de projet de type développement.
-<br>7.2	Fonctionnalités minimales
+<br><h3>7.2	Fonctionnalités minimales</h3>
 <br>Le type d’application C demandé doit offrir les fonctionnalités minimales suivantes :<br>
 Version 0.1 (pour le 2 mars 2018) :
 <br><br>•	Jouer à la bataille navale alors que la position des bateaux est codée dans le programme
