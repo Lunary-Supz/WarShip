@@ -13,7 +13,7 @@ Version 1.0 (pour le 20 avril 2018)
 <br>•	S’authentifier en tant que joueur
 <br>•	Logger les faits importants durant toute la durée de fonctionnement de l’application
 <br>•	Le programme choisit une grille au hasard dans un répertoire et la charge 
-<br>•	Afficher la liste des scores atteints lors des parties précédentes
+<br>•	Afficher la liste des scores atteints lors des parties précédentes<br>
 <br>Notes : 
 <br>•	Des fichiers seront utilisés pour la persistance des données.
 <br>•	Un menu de type console sera utilisé pour accéder aux différentes fonctionnalités.
