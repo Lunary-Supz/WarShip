@@ -17,4 +17,4 @@ Version 1.0 (pour le 20 avril 2018)
 Notes : 
 <br>•	Des fichiers seront utilisés pour la persistance des données.
 <br>•	Un menu de type console sera utilisé pour accéder aux différentes fonctionnalités.
-<br>•	Une extension pourra être envisagée pour ceux qui auraient terminé toutes les fonctionnalités avant la fin du temps imparti. Elle sera à discuter entre l’élève et le mandant du projet.
+<br><br>•	Une extension pourra être envisagée pour ceux qui auraient terminé toutes les fonctionnalités avant la fin du temps imparti. Elle sera à discuter entre l’élève et le mandant du projet.
