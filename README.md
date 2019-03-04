@@ -1,7 +1,7 @@
 7a DESCRIPTIF DU PROJET
-	7.1	Généralités
+<br>7.1	Généralités
 Ce module MA-20 a pour objectifs d'entraîner les étudiants à la réalisation de projet de type développement.
-7.2	Fonctionnalités minimales
+<br>7.2	Fonctionnalités minimales
 Le type d’application C demandé doit offrir les fonctionnalités minimales suivantes :<br>
 Version 0.1 (pour le 2 mars 2018) :
 <br><br>•	Jouer à la bataille navale alors que la position des bateaux est codée dans le programme
