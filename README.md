@@ -1,3 +1,5 @@
+<h1>Projet WarShip</h1>
+
 7a DESCRIPTIF DU PROJET
 <br>7.1	Généralités
 <br>Ce module MA-20 a pour objectifs d'entraîner les étudiants à la réalisation de projet de type développement.
