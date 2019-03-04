@@ -1,7 +1,7 @@
 <h1>Projet WarShip</h1>
 
-7a DESCRIPTIF DU PROJET
-<br>7.1	Généralités
+<h2>7a DESCRIPTIF DU PROJET</h2>
+<br><h3>7.1	Généralités</h3>
 <br>Ce module MA-20 a pour objectifs d'entraîner les étudiants à la réalisation de projet de type développement.
 <br>7.2	Fonctionnalités minimales
 <br>Le type d’application C demandé doit offrir les fonctionnalités minimales suivantes :<br>
