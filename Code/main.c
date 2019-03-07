@@ -3,6 +3,7 @@
 int main() {
     int choix;
     int aide;
+    int jouer ;
     printf ("\nBIENVENUE DANS LE JEU : BATAILLE NAVALE\n\n");
 
     printf ("1. Jouer\n");
