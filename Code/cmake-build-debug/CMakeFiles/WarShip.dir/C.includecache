@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Simon.CUANY/Documents/Github/WarShip/main.c
+C:/Users/Simon.CUANY/Documents/Github/WarShip/BN-SCY-BatailleNavale/Code/main.c
 stdio.h
+-
+windows.h
 -
 

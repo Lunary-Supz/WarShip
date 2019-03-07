@@ -1,4 +1,4 @@
-C:\SandBox\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Simon.CUANY\Documents\Github\WarShip
+C:\SandBox\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Simon.CUANY\Documents\Github\WarShip\BN-SCY-BatailleNavale\Code
 -- The C compiler identification is GNU 6.3.0
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe -- works
@@ -8,4 +8,4 @@ C:\SandBox\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBl
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Simon.CUANY/Documents/Github/WarShip/cmake-build-debug
+-- Build files have been written to: C:/Users/Simon.CUANY/Documents/Github/WarShip/BN-SCY-BatailleNavale/Code/cmake-build-debug

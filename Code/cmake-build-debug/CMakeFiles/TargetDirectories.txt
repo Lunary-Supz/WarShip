@@ -1,3 +1,3 @@
-C:/Users/Simon.CUANY/Documents/Github/WarShip/cmake-build-debug/CMakeFiles/WarShip.dir
-C:/Users/Simon.CUANY/Documents/Github/WarShip/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Simon.CUANY/Documents/Github/WarShip/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Simon.CUANY/Documents/Github/WarShip/BN-SCY-BatailleNavale/Code/cmake-build-debug/CMakeFiles/WarShip.dir
+C:/Users/Simon.CUANY/Documents/Github/WarShip/BN-SCY-BatailleNavale/Code/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Simon.CUANY/Documents/Github/WarShip/BN-SCY-BatailleNavale/Code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
