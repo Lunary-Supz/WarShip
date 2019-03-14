@@ -1,0 +1,6 @@
+Rappel:
+
+Les fichiers de type documentation doivent être dans ce dossier.
+Veuillez donc y déplacer votre stratégie de test svp.
+
+Xavier Carrel
