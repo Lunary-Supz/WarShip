@@ -20,6 +20,8 @@ Pour générer l'exécutable, vous devez :
 
 Pour exécuter le programme, vous devez :
 
-1. 
+1. Ouvrir l'exécutable appelé WarShip.exe
+1. Cliquez sur play
+1. Amusez-vous
 
 
