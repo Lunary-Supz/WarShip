@@ -44,6 +44,6 @@ int main() {
         printf ("%c   %c   %c   %c   %c\n",SVSB,SVSB,SVSB,SVSB,SVSB);
         printf ("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n",SBLC,SHSB,SHSB,SHSB,SHBB,SHSB,SHSB,SHSB,SHBB,SHSB,SHSB,SHSB,SHBB,SHSB,SHSB,SHSB,SBRC);
     }
-    system 
+
     return 0;
 }
