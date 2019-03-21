@@ -21,7 +21,7 @@ Pour générer l'exécutable, vous devez :
 Pour exécuter le programme, vous devez :
 
 1. Ouvrir le repository puis ouvrir le dossier nommé "programme".
-1. Ouvrir le dossier nommé 
+1. Ouvrir le dossier nommé cmake-build-debug
 1. Ouvrir l'exécutable appelé WarShip.exe
 1. Cliquez sur play
 1. Amusez-vous
