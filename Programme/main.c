@@ -11,15 +11,59 @@
 #define SHBB 193 // ┴, Single Horizontal Bottom Border
 #define SHTB 194 // ┬, Single Horizontal Top Border
 #define SC   197 // ┼, Single Center
-é
+#define SIZE 10
 
-int TopBorder(void) {
-    printf ("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", STLC, SHSB, SHSB, SHSB, SHTB, SHSB, SHSB, SHSB, SHTB, SHSB,
-            SHSB, SHSB, SHTB, SHSB, SHSB, SHSB, STRC);
+    void TopBorder(int cote) {
+    printf ("%c", STLC);                                //┌───┬───┬───┬───┐
+    for (int i = 0 ; i <= cote-2; i++) {
+        printf ("%c%c%c%c", SHSB, SHSB, SHSB, SHTB);
+    }
+        printf ("%c", STRC);
 
+    }
+
+
+
+    void HorizontalBorder(int cote){                    // │   │   │   │   │
+        for (int i = 0; i <= cote-1 ; i++) {
+            printf ("%c   ", SVSB);
+        }
 }
 
+
+    void MiddleBorder(int cote){                        //├───┼───┼───┼───┤
+       printf ("%c", SVLB);
+        for (int i = 0; i <= cote-2 ; i++) {
+            printf ("%c%c%c%c",SHSB, SHSB, SHSB, SC);
+        }
+            printf ("%c",SVRB);
+}
+
+    void BottomBorder (int cote) {
+        printf ("%c",SBLC);
+        for (int i = 0; i <= cote -2; i ++) {
+            printf ("%c%c%c%c",SHSB,SHSB,SHSB,SHBB);
+        }
+            printf ("%c",SBRC);
+    }
+
+int TtopBorder(void) {
+    printf ("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", STLC, SHSB, SHSB, SHSB, SHTB, SHSB, SHSB, SHSB, SHTB, SHSB,SHSB, SHSB, SHTB, SHSB, SHSB, SHSB, STRC);   //┌───┬───┬───┬───┐
+}
+
+
 int main() {
+    TopBorder (SIZE);
+    printf ("\n");
+    HorizontalBorder (SIZE);
+    printf ("\n");
+    for (int i = 0; i <= SIZE-1 ; ++i) {
+        MiddleBorder (SIZE);
+        printf ("\n");
+    }
+    printf ("\n");
+    BottomBorder (SIZE);
+
     int choix;
     printf ("\n----BIENVENUE DANS LE JEU BATAILLE NAVALE----\n\n");
 printf("                   __/___            \n"
@@ -39,24 +83,9 @@ printf("                   __/___            \n"
 
     {
         SetConsoleOutputCP (65001); // For accented characters
-        printf ("\nUne grille basée sur les lignes simples:\n\n");
         SetConsoleOutputCP (437); // For semi-graphic characters
-        printf ("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", STLC, SHSB, SHSB, SHSB, SHTB, SHSB, SHSB, SHSB, SHTB, SHSB,
-                SHSB, SHSB, SHTB, SHSB, SHSB, SHSB, STRC);
-        printf ("%c   %c   %c   %c   %c\n", SVSB, SVSB, SVSB, SVSB, SVSB);
-        printf ("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", SVLB, SHSB, SHSB, SHSB, SC, SHSB, SHSB, SHSB, SC, SHSB, SHSB,
-                SHSB, SC, SHSB, SHSB, SHSB, SVRB);
-        printf ("%c   %c   %c   %c   %c\n", SVSB, SVSB, SVSB, SVSB, SVSB);
-        printf ("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", SVLB, SHSB, SHSB, SHSB, SC, SHSB, SHSB, SHSB, SC, SHSB, SHSB,
-                SHSB, SC, SHSB, SHSB, SHSB, SVRB);
-        printf ("%c   %c   %c   %c   %c\n", SVSB, SVSB, SVSB, SVSB, SVSB);
-        printf ("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", SVLB, SHSB, SHSB, SHSB, SC, SHSB, SHSB, SHSB, SC, SHSB, SHSB,
-                SHSB, SC, SHSB, SHSB, SHSB, SVRB);
-        printf ("%c   %c   %c   %c   %c\n", SVSB, SVSB, SVSB, SVSB, SVSB);
-        printf ("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", SBLC, SHSB, SHSB, SHSB, SHBB, SHSB, SHSB, SHSB, SHBB, SHSB,
-                SHSB, SHSB, SHBB, SHSB, SHSB, SHSB, SBRC);
+        //TopBorder (void);
     }
-
 
 
         if (choix == 2)     // pour afficher l'aide
@@ -68,6 +97,19 @@ printf("                   __/___            \n"
         {
             printf ("\n\nCe programme a ete code par Simon Cuany pour un projet afin de s'entrainer avec le language C au CPNV de Ste-Croix.\n");
         }
+
+        if (choix == 4)     //pour personnaliser les grilles
+        {
+            printf ("\n Ici vous pouvez personnaliser les grilles... \n");  //WIP
+        }
+
+        if (choix == 5)     //pour quitter
+        {
+            printf ("\nAu revoir !\n\n");
+            system("\nPAUSE");
+        }
+
+
 
         return 0;
 }
