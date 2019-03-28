@@ -1,5 +1,7 @@
+//Author : Simon Cuany  /   Date of creation : 07.03.2019   /   Title : Bataille Navale
 #include <stdio.h>
 #include <windows.h>
+
 #define STLC 218 // ┌, Single Top Left Corner
 #define STRC 191 // ┐, Single Top Right Corner
 #define SBLC 192 // └, Single Bottom Left Corner
@@ -13,103 +15,123 @@
 #define SC   197 // ┼, Single Center
 #define SIZE 10
 
-    void TopBorder(int cote) {
-    printf ("%c", STLC);                                //┌───┬───┬───┬───┐
-    for (int i = 0 ; i <= cote-2; i++) {
+void TopBorder(int cote) {          //Top Border fonction
+    printf ("    ");
+    for (int i = 0; i < cote; i++){         //Incremented letters
+        printf ("%c   ", 'A' + i);
+    }
+    printf ("\n");
+    printf ("  %c", STLC);                                //┌───┬───┬───┬───┐
+    for (int i = 0; i <= cote - 2; i++) {
         printf ("%c%c%c%c", SHSB, SHSB, SHSB, SHTB);
     }
-        printf ("%c", STRC);
+    printf ("%c%c%c%c", SHSB, SHSB, SHSB, STRC);
+    printf ("\n");
 
-    }
-
-
-
-    void HorizontalBorder(int cote){                    // │   │   │   │   │
-        for (int i = 0; i <= cote-1 ; i++) {
-            printf ("%c   ", SVSB);
-        }
 }
 
 
-    void MiddleBorder(int cote){                        //├───┼───┼───┼───┤
-       printf ("%c", SVLB);
-        for (int i = 0; i <= cote-2 ; i++) {
-            printf ("%c%c%c%c",SHSB, SHSB, SHSB, SC);
-        }
-            printf ("%c",SVRB);
+void VerticalBorder(int cote, int num) {//Vertical Border fonction
+    printf ("%d %c",num,SVSB);
+    for (int i = 0; i <= cote - 2; i++) {            // │   │   │   │   │
+        printf ("   %c", SVSB);
+
+    }
+    printf ("   %c", SVSB);
+    printf ("\n");
 }
 
-    void BottomBorder (int cote) {
-        printf ("%c",SBLC);
-        for (int i = 0; i <= cote -2; i ++) {
-            printf ("%c%c%c%c",SHSB,SHSB,SHSB,SHBB);
-        }
-            printf ("%c",SBRC);
-    }
 
-int TtopBorder(void) {
-    printf ("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", STLC, SHSB, SHSB, SHSB, SHTB, SHSB, SHSB, SHSB, SHTB, SHSB,SHSB, SHSB, SHTB, SHSB, SHSB, SHSB, STRC);   //┌───┬───┬───┬───┐
+void MiddleBorder(int cote) {                        //Middle Border fontion
+    printf ("  %c", SVLB);                             //├───┼───┼───┼───┤
+    for (int i = 0; i <= cote - 2; i++) {
+        printf ("%c%c%c%c", SHSB, SHSB, SHSB, SC);
+    }
+    printf ("%c%c%c%c", SHSB, SHSB, SHSB, SVRB);
+    printf ("\n");
+}
+
+void BottomBorder(int cote) {
+    printf ("  %c", SBLC);                             //└───┴───┴───┴───┴───┴──┘
+    for (int i = 0; i <= cote - 2; i++) {
+        printf ("%c%c%c%c", SHSB, SHSB, SHSB, SHBB);
+    }
+    printf ("%c%c%c%c", SHSB, SHSB, SHSB, SBRC);
+    printf ("\n");
+}
+
+void grille() {
+
+    for (int j = 0; j < SIZE; j++) {
+        if (j == 0)
+        {
+            TopBorder (SIZE);
+        } else {
+            MiddleBorder (SIZE);
+        }
+        VerticalBorder (SIZE,j);
+    }
+    BottomBorder (SIZE);
+
 }
 
 
 int main() {
-    TopBorder (SIZE);
-    printf ("\n");
-    HorizontalBorder (SIZE);
-    printf ("\n");
-    for (int i = 0; i <= SIZE-1 ; ++i) {
-        MiddleBorder (SIZE);
-        printf ("\n");
-    }
-    printf ("\n");
-    BottomBorder (SIZE);
+
 
     int choix;
     printf ("\n----BIENVENUE DANS LE JEU BATAILLE NAVALE----\n\n");
-printf("                   __/___            \n"
-       "             _____/______|           \n"
-       "     _______/_____\\_______\\_____     \n"
-       "     \\              < < <       |    \n"
-       "   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
+    printf ("                   __/___            \n"
+            "             _____/______|           \n"
+            "     _______/_____\\_______\\_____     \n"
+            "     \\              < < <       |    \n"
+            "   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
     printf ("1. Jouer\n");
     printf ("2. aide\n");
     printf ("3. credits\n");
     printf ("4. personnalisation\n");
-    printf ("5. Quitter\n");
+    printf ("5. Quitter\n\n\n");
     scanf ("%d", &choix);
-    printf ("Vous avez choisit l'option %d", choix);
+
+    while (choix < 1 || choix > 5) {
+
+        printf ("Veuillez entrez un choix correct\n\n");
+        scanf ("%d", &choix);
+    }
+
 
     if (choix == 1)     //pour pouvoir jouer
 
     {
         SetConsoleOutputCP (65001); // For accented characters
         SetConsoleOutputCP (437); // For semi-graphic characters
-        //TopBorder (void);
+        grille ();
     }
 
 
-        if (choix == 2)     // pour afficher l'aide
-        {
-            printf ("\n\nLes regles sont simples, nous avons 3 bateaux et l'adversaire en a aussi 3.\nPour tirer rien de plus simple ; nous annoncons une case (B5) si il y a une partie du bateau en case B5, le bateau est touche. Le but est de couler les trois bateaux adverses");
-        }
+    if (choix == 2)     // pour afficher l'aide
+    {
+        printf ("\n\nLes regles sont simples, nous avons 3 bateaux et l'adversaire en a aussi 3.\nPour tirer rien de plus simple ; nous annoncons une case (B5) si il y a une partie du bateau en case B5, le bateau est touche. Le but est de couler les trois bateaux adverses");
+        system ("\n\nPAUSE");
+    }
 
-        if (choix == 3)     //pour afficher les crédits
-        {
-            printf ("\n\nCe programme a ete code par Simon Cuany pour un projet afin de s'entrainer avec le language C au CPNV de Ste-Croix.\n");
-        }
+    if (choix == 3)     //pour afficher les crédits
+    {
+        printf ("\n\nCe programme a ete code par Simon Cuany pour un projet afin de s'entrainer avec le language C au CPNV de Ste-Croix.\n");
+        system ("\n\n PAUSE");
+    }
 
-        if (choix == 4)     //pour personnaliser les grilles
-        {
-            printf ("\n Ici vous pouvez personnaliser les grilles... \n");  //WIP
-        }
+    if (choix == 4)     //pour personnaliser les grilles
+    {
+        printf ("\n Ici vous pouvez personnaliser les grilles... \n");  //WIP
+    }
 
-        if (choix == 5)     //pour quitter
-        {
-            printf ("\nAu revoir !\n\n");
-            system("\nPAUSE");
-        }
+    if (choix == 5)     //pour quitter
+    {
+        printf ("\nAu revoir !\n\n");
+        system ("\n\nPAUSE");
+    }
 
-
-
-        return 0;
+    system ("PAUSE");
+    return 0;
 }
