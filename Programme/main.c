@@ -15,6 +15,17 @@
 #define SC   197 // ┼, Single Center
 #define SIZE 10
 
+int Tableau [10][10]  = {{88,  90,  88,  0,  0,  0,  0,  0,  0,  0},
+                         {0,  0,  0,  0,  0,  0,  0,  0,  0,  0},
+                         {88,  70,  0,  0,  0,  0,  0,  0,  0,  0},
+                         {0,  0,  0,  0,  0,  0,  0,  0,  0,  0},
+                         {0,  0,  0,  0,  0,  0,  0,  0,  0,  0},
+                         {0,  0,  0,  0,  0,  0,  0,  0,  0,  0},
+                         {0,  0,  0,  0,  0,  0,  0,  0,  0,  0},
+                         {0,  0,  0,  0,  0,  0,  0,  0,  0,  0},
+                         {0,  0,  0,  0,  0,  0,  0,  0,  0,  0},
+                         {0,  0,  0,  0,  0,  0,  0,  0,  0,  0}};
+int ligne=0;
 void TopBorder(int cote) {          //Top Border fonction
     printf ("    ");
     for (int i = 0; i < cote; i++){         //Incremented letters
@@ -33,11 +44,11 @@ void TopBorder(int cote) {          //Top Border fonction
 
 void VerticalBorder(int cote, int num) {//Vertical Border fonction
     printf ("%d %c",num,SVSB);
-    for (int i = 0; i <= cote - 2; i++) {            // │   │   │   │   │
-        printf ("   %c", SVSB);
-
+    for (int i = 0; i <= cote - 2; i++) {            // │ X │   │   │   │
+        printf (" %c %c",Tableau[0][ligne], SVSB);
+ligne++;
     }
-    printf ("   %c", SVSB);
+    printf ("   %c",SVSB);
     printf ("\n");
 }
 
