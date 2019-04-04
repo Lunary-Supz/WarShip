@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <windows.h>
+#include <conio.h>
 
 #define STLC 218 // ┌, Single Top Left Corner
 #define STRC 191 // ┐, Single Top Right Corner
@@ -123,11 +124,10 @@ int main() {
     scanf ("%d", &choix);
 
 
-    while (choix < 1 || choix > 6) {
+    while (choix < 1 || choix > 5) {
 
         printf ("Veuillez entrez un choix correct\n\n");
         scanf ("%d", &choix);
-
     }
 
 
@@ -138,6 +138,49 @@ int main() {
         SetConsoleOutputCP (437); // For semi-graphic characters
         grille ();
         Tableau[Colonne] [Ligne] ;
+        int choixcol;
+        int choixli;
+
+
+        printf ("\n\nEntrez la colonne ou vous voulez tirer");
+        choixcol=_getch();
+        while (choixcol < 97 || choixcol > 106) {
+            printf ("\n\nEntrez entre a et j\n");
+            choixcol=_getch ();
+        }
+        switch (choixcol){
+            case 97:choixcol = 0;
+                break;
+            case 98:choixcol = 1;
+                break;
+            case 99:choixcol = 2;
+                break;
+            case 100:choixcol = 3;
+                break;
+            case 101:choixcol = 4;
+                break;
+            case 102:choixcol = 5;
+                break;
+            case 103:choixcol = 6;
+                break;
+            case 104:choixcol = 7;
+                break;
+            case 105:choixcol = 8;
+                break;
+            case 106:choixcol = 9;
+                break;
+            default:printf ("Si t'arrives ici c'est que y'a un probleme ;/");
+
+        }
+
+        printf ("\n\nEnter la ligne ou vous voulez tirer\n");
+        choixli=_getch();
+        while (choixli < 48 || choixli > 57) {
+            printf ("\n\nEntrez entre 0 et 9\n");
+            choixli=_getch ();
+        }
+
+
 
     }
 
@@ -183,14 +226,6 @@ int main() {
     {
         printf ("\nAu revoir !\n\n");
         system ("EXIT");
-    }
-    if (choix == 6)
-    {
-        printf ("\n\nBienvenue dans la grotte de l'EASTER EGG !! \n\nVous etes maintenant un Hero !\n");
-        system ("\n\necho %username% a debloquer le grade Hero legendaire ! \n");
-        system ("\n\nPAUSE");
-        system ("CLS");
-        scanf ("%d", main ());
     }
 
     system ("\n\nPAUSE");
