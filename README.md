@@ -27,4 +27,11 @@ Pour exécuter le programme, vous devez :
 1. Cliquez sur play
 1. Amusez-vous
 
+## Rebuild
+
+Pour rebuild le programme, vous devez :
+
+1. Avoir lancé le programme
+1. Quand vous avez lancé le programme, quittez le 
+1. Relancez le
 
