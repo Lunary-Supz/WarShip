@@ -1,8 +1,8 @@
 #	Bataille Navale
 
-##	Description 
+## Description 
 Ce projet est une partie de bataille navale (Fait en cours) contre l'ordinateur en langague C 
-##	Génération
+## Génération
 Pour pouvoir lancer le programme vous aurez besoin de :
 	
 - Avoir un compte GitHub
