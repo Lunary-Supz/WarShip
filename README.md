@@ -1,15 +1,15 @@
 #	Bataille Navale
 
 ## Description 
-Ce projet est une partie de bataille navale (Fait en cours) contre l'ordinateur en langague C 
+### Ce projet est une partie de bataille navale (Fait en cours) contre l'ordinateur en langague C 
 ## Génération
-Pour pouvoir lancer le programme vous aurez besoin de :
+### Pour pouvoir lancer le programme vous aurez besoin de :
 	
 - Avoir un compte GitHub
 - Rechercher SimonCuany
 - Ouvrir le repository	
 
-Pour générer l'exécutable, vous devez :
+### Pour générer l'exécutable, vous devez :
 
 1. Ouvrir l'onglet Code
 1. Ouvrir le dossier Programme
@@ -18,7 +18,7 @@ Pour générer l'exécutable, vous devez :
 
 ## Exécution
 
-Pour exécuter le programme, vous devez :
+### Pour exécuter le programme, vous devez :
 
 1. Ouvrir le repository puis ouvrir le dossier nommé "programme".
 1. Ouvrir le dossier nommé cmake-build-debug
@@ -29,7 +29,7 @@ Pour exécuter le programme, vous devez :
 
 ## Rebuild
 
-Pour rebuild le programme, vous devez :
+### Pour rebuild le programme, vous devez :
 
 1. Avoir lancé le programme
 1. Quand vous avez lancé le programme, quittez le 
